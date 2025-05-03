@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>datatype</title>
+</head>
+<body>
+    <h1 id="hh"></h1>
+
+    <script>
+
+
+function sum(a,b){
+    return a + b;
+}
+
+// console.log(`1 + 2 = ${sum(1, 2)}.`)
+// console.log(sum(4,6))
+
+console.log(`1 + 2 = ${sum(1,2)}`)
+
+// alert(`1 + 2 = ${sum(1, 2)}.`);
+
+// backticks
+
+let guestList = `Guests 
+*john 
+*pete
+*mary`;
+console.log(guestList)
+
+
+// special characters
+let updateName = "farhan\r abc\r bg"
+// alert(updateName)
+
+
+
+
+// accessing characters
+
+let str = `Hello`;
+// console.log(str [0]);
+// console.log(str.at[0])
+console.log(str[str.lenght - 1]);
+console.log(str.at[-1])
+
+
+let backticks = `backstick`
+console.log(backticks)
+
+
+
+
+let strP = 'Hello';
+console.log(strP[0]);
+console.log(strP.at(0));
+console.log(strP.length);
+console.log(strP[-2]);
+console.log(strP.at(-2));
+
+for (let char of 'Hello') console.log(char);
+for (const main of 'Farha') console.log(main);
+
+
+
+// string cant be change in javascript it is impossible
+let strNew = 'mmm';
+
+strNew[0] = 'hhhh';
+console.log(strNew[0]);
+
+let strUpdate = 'hello';
+strUpdate = 'M' + strUpdate[4];
+console.log(strUpdate);
+
+
+// indexOf
+let str2 = "Widget with id";
+
+console.log( str2.indexOf('set') ); 
+console.log(str2.indexOf("id"))
+
+console.log(str2.indexOf('id', 2))
+
+// let ste = "name whit farhan";
+// console.log(ste.indexOf('farhan'))
+
+
+
+// changing the case
+let nameUpdate = "farhan";
+console.log(nameUpdate.toUpperCase())
+
+console.log(nameUpdate.toLowerCase())
+
+        // floating number
+let n = 123
+n = 12.344 
+console.log(n)
+
+
+let number = 133444
+number = 2.3333
+console.log(number.typeof)
+
+
+
+
+// Infinity
+
+console.log(1/0)
+console.log(Infinity)
+
+
+// Nan
+console.log("not a number" / 2)
+
+
+
+// BigInt
+// bigint is javascript specail datatype that allow to javascript hold very large number
+console.log(900093939393939 + 1)
+
+
+
+
+
+    </script>
+
+</body>
+</html>
