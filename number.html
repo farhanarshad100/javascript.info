@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>datatype</title>
+</head>
+<body>
+    <h1 id="hh"></h1>
+
+    <script>
+let billion = 2e9;
+console.log(billion)
+const billion2 = 7.3e9;
+console.log(billion2)
+
+
+let billion3 = 4e9;
+console.log(billion3)
+
+let newBillion = 1.23e6 === 1.23;
+console.log(newBillion)
+
+// Hex, binary and octal number
+console.log( 0xff );
+let a = 0b11111111
+let b = 0o377;
+console.log( a == b)
+console.log(b)
+
+
+// to string (base)
+
+let num = 255;
+console.log(num.toString(16));
+console.log(num.toString(2))
+console.log(num.toString(3))
+
+console.log(123456..toString(36))
+
+console.log(3e9)
+
+let newNum = 1.23456;
+console.log(Math.round(newNum * 100) / 100)
+console.log(Math.round(newNum * 100) / 100)
+
+
+let num2 = 12.36;
+console.log(num2.toFixed(1));
+
+let num3 = 12.34;
+console.log(num3.toFixed(5));
+
+console.log(1e500)
+console.log(1e500)
+
+
+
+let price = 499.99;
+let taxRate = 0.18;
+let total = price + price * taxRate;
+
+console.log(total)
+
+// date & time
+let now = Date.now();
+setTimeout(() => {
+  console.log("5 second passed")
+},5000)
+
+
+let start = Date.now();
+setTimeout(() =>{
+  let elapsed = (Date.now() - start) / 4000;
+  console.log(`${elapsed} seconds passed`)  ;
+
+}, 5000)
+
+
+let progress = 0;
+function animate() {
+  progress += 1;
+  if (progress <= 100) {
+    console.log(`Progress: ${progress}%`);
+    requestAnimationFrame(animate);
+  }
+}
+animate();
+
+ 
+let input = document.getElementById("ageInput");
+
+let age = Number(input.value);
+if (age >= 18 && age <= 100) {
+  console.log("Valid age");
+}
+
+let principal = 100000;
+let rate = 0.05;
+let years = 5;
+let amount  = principal * Math.pow(1 + rate, years);
+console.log(amount)
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
