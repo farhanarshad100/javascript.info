@@ -55,7 +55,43 @@ function showMessage(){
 }
 showMessage()
 console.log(userName)
- 
+
+function checkAge(age){
+  if (age  >= 18) {
+    return true;
+  } else {
+    return confirm ('do u have Do you have permission from your parents? ')
+  }
+}
+let age = prompt('How old are you?', 18);
+if (checkAge(age)){
+  console.log("access")
+}else{
+  console.log("acces denied")
+}
+
+function showMessage (from, text){
+  text = text || 'not text given'
+  console.log(text)
+}
+showMessage()
+
+function sum(a, b){
+  return a + b;
+}
+let result = sum( 5, 6)
+console.log(result)
+
+
+function checkAge (age){
+  return age >= 20;
+}
+let age = 30;
+if (checkAge(age)){
+  console.log("Done");
+} else {
+  console.log("False")
+}
  </script>
 
 </body>
