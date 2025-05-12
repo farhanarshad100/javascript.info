@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Hover Expand</title>
+  <style>
+    body {
+      background: #000;
+      padding: 50px;
+      font-family: sans-serif;
+    }
+
+    .container {
+      /* max-width: 1400px; */
+      margin: auto;
+    }
+
+    .movieCard {
+      width: 296px;
+      height: 478px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: width 0.5s cubic-bezier(.2,.45,0,1);
+      background-color: #111;
+    }
+
+    .movieCard:hover {
+      width: 741px;
+    }
+
+    .posterView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 296px;
+  height: 100%;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+    .posterView img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 10px;
+      transition: opacity 0.3s ease;
+    }
+
+    .movieCard:hover .posterView img {
+      opacity: 0;
+    }
+
+    .previewHover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 741px;
+      height: 100%;
+      opacity: 0;
+      /* transition: opacity 0.5s ease 0.1s; */
+      pointer-events: none;
+    }
+
+    .movieCard:hover .previewHover {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .previewHover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .previewContent {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+    }
+
+    .buttons button {
+      margin: 10px 10px 0 0;
+      padding: 8px 14px;
+      border: none;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .labels {
+      margin-top: 10px;
+    }
+
+    .prime {
+      color: #00a8e1;
+      font-size: 0.9rem;
+    }
+
+    .tag {
+      background: white;
+      color: black;
+      padding: 2px 6px;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      margin-left: 8px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+
+.movieCard:last-child:hover .previewHover {
+  transform: translateX(100%); /* If you want the preview to move left for the last card */
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="grid">
+        <div class="movieCard">
+            <!-- Poster View -->
+            <div class="posterView">
+              <img src="image/top1.webp" alt="The Assessment" />
+            </div>
+        
+            <!-- Preview on Hover -->
+            <div class="previewHover">
+              <img src="image/cover.webp" alt="Preview" />
+              <div class="previewContent">
+                <h3>The Assessment</h3>
+                <div class="buttons">
+                  <button>▶ Play</button>
+                  <button>＋</button>
+                  <button>ℹ️</button>
+                </div>
+                <div class="labels">
+                  <span class="prime">✔ Included with Prime</span>
+                  <span class="tag">NEW MOVIE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="movieCard">
+            <!-- Poster View -->
+            <div class="posterView">
+              <img src="image/top1.webp" alt="The Assessment" />
+            </div>
+        
+            <!-- Preview on Hover -->
+            <div class="previewHover">
+              <img src="image/cover.webp" alt="Preview" />
+              <div class="previewContent">
+                <h3>The Assessment</h3>
+                <div class="buttons">
+                  <button>▶ Play</button>
+                  <button>＋</button>
+                  <button>ℹ️</button>
+                </div>
+                <div class="labels">
+                  <span class="prime">✔ Included with Prime</span>
+                  <span class="tag">NEW MOVIE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="movieCard">
+            <!-- Poster View -->
+            <div class="posterView">
+              <img src="image/top1.webp" alt="The Assessment" />
+            </div>
+        
+            <!-- Preview on Hover -->
+            <div class="previewHover">
+              <img src="image/cover.webp" alt="Preview" />
+              <div class="previewContent">
+                <h3>The Assessment</h3>
+                <div class="buttons">
+                  <button>▶ Play</button>
+                  <button>＋</button>
+                  <button>ℹ️</button>
+                </div>
+                <div class="labels">
+                  <span class="prime">✔ Included with Prime</span>
+                  <span class="tag">NEW MOVIE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="movieCard">
+            <!-- Poster View -->
+            <div class="posterView">
+              <img src="image/top1.webp" alt="The Assessment" />
+            </div>
+        
+            <!-- Preview on Hover -->
+            <div class="previewHover">
+              <img src="image/cover.webp" alt="Preview" />
+              <div class="previewContent">
+                <h3>The Assessment</h3>
+                <div class="buttons">
+                  <button>▶ Play</button>
+                  <button>＋</button>
+                  <button>ℹ️</button>
+                </div>
+                <div class="labels">
+                  <span class="prime">✔ Included with Prime</span>
+                  <span class="tag">NEW MOVIE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="movieCard">
+            <!-- Poster View -->
+            <div class="posterView">
+              <img src="image/top1.webp" alt="The Assessment" />
+            </div>
+        
+            <!-- Preview on Hover -->
+            <div class="previewHover">
+              <img src="image/cover.webp" alt="Preview" />
+              <div class="previewContent">
+                <h3>The Assessment</h3>
+                <div class="buttons">
+                  <button>▶ Play</button>
+                  <button>＋</button>
+                  <button>ℹ️</button>
+                </div>
+                <div class="labels">
+                  <span class="prime">✔ Included with Prime</span>
+                  <span class="tag">NEW MOVIE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+  
+</div>
+
+</body>
+</html>
