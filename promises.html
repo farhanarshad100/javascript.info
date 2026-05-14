@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>datatype</title>
+</head>
+<body>
+    <h1 id="hh"></h1>
+
+    <script>
+//         const makeDough = () =>{
+//             return new Promise ((resolve) =>{
+//                 setTimeout (() =>{
+//                     console.log("🥖 Dough is ready")
+//                     resolve ("Dough")
+//                 }, 2000)
+//             })
+//         };
+//         const addSauce = (dough) =>{
+//             return new Promise ((resolve, reject) =>{
+//                 setTimeout (() =>{
+//                     console.log("🍅 Sauce added on" + dough )
+//                     resolve ("sause base")
+//                 }, 2000)
+//             })
+//         }
+//                 const addCheese = (base) =>{
+//             return new Promise ((resolve) =>{
+//                 setTimeout (() =>{
+//                     console.log("🧀 Cheese added on" + base)
+//                     resolve ("cheese pizza")
+//                 }, 2000)
+//             })
+//         }
+//                         const bakePizza = (pizza) =>{
+//             return new Promise ((resolve) =>{
+//                 setTimeout (() =>{
+//                     console.log("🧀 makeing pizza" + pizza)
+//                     resolve ("pizza is ready")
+//                 }, 3000)
+//             })
+//         }
+        
+//    const makePizza = async () => {
+//   try {
+//     const dough = await makeDough();
+//     const sauceBase = await addSauce(dough);
+//     const cheesePizza = await addCheese(sauceBase);
+//     const finalPizza = await bakePizza(cheesePizza);
+
+//     console.log(finalPizza);
+//   } catch (error) {
+//     console.log("❌ Something went wrong:", error);
+//   }
+// };
+// makePizza();
+
+const p = new Promise ((resolve, reject)=>{
+const a = 2 + 3
+if ( a === 3 ){
+    resolve("")
+}else(
+    reject ("")
+)
+});
+// p.then(m =>{
+//     console.log("Done"+ m)
+// }).catch(m =>{
+//      console.log("false"+ m)
+// }).finally(m =>{
+//     console.log("promise complete")
+// })
+
+p
+.then(result =>(console.log("Hello")))
+.catch(error =>(console.log("error")))
+
+
+
+
+function waitForPizza() {
+  return new Promise(resolve => {
+   setTimeout(() => {
+        resolve("pizza is ready")
+   }, 3000);
+  });
+}
+
+async function orderPizza() {
+  console.log("⏳ Waiting for pizza...");
+  const pizza = await waitForPizza(); // waits here until promise resolves
+  console.log(pizza); // 🍕 Pizza is ready!
+}
+
+orderPizza();
+
+  
+const nestedArray = [
+[1,2,3],
+['a,', 'b', 'c'],
+[true, false],
+[{name:"Farhan", age: 30}]
+];
+
+nestedArray.forEach (inner => {
+inner.forEach(item => {
+console.log(item, "=>", typeof item)
+})
+})
+
+
+
+console.log("Task 1");
+
+setTimeout(() => {
+  console.log("Task 2 (after 2 sec)");
+}, 2000);
+
+console.log("Task 3");
+
+    </script>
+
+</body>
+</html>

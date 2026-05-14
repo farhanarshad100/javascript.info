@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime.js Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <style>
+    .box {
+  width: 100px;
+    height: 100px;
+    background: dodgerblue;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 8px;
+    cursor: grab;
+    }
+  </style>
+</head>
+<body>
+<p>Determines the points at which actions are triggered based on the scrolling position of a target element within a container.
+Determines the points at which actions are triggered based on the scrolling position of a target element within a container.
+</p>
+  <div class="box"></div>
+    <div class="box"></div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script>
+  interact('.box').draggable({
+    listeners: {
+      move (event) {
+        const target = event.target;
+
+        // keep track of drag position
+        const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+        const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+        // animate with Anime.js
+        anime({
+          targets: target,
+          translateX: x,
+          translateY: y,
+          duration: 100,
+          easing: 'easeOutQuad'
+        });
+
+        // store the position
+        target.setAttribute('data-x', x);
+        target.setAttribute('data-y', y);
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
