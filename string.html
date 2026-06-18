@@ -170,6 +170,7 @@ width: 600px;
 
 <button id="loop"></button>
 <div id="loopInner"></div>
+<div id="showList"></div>
 
 <script>
 // let count = document.getElementById("textCount").innerText
@@ -244,9 +245,110 @@ let newIndex = "Please locate where 'locate' occurs!";
 let update = newIndex.indexOf("locate", 15);
 console.log(update)
 
-let newPart = "Please find the best jhdasj sadhasjd parts of my life";
-let updateLife = newPart.indexOf("parts");
-console.log(updateLife)
+// let newPart = "Please find the best jhdasj sadhasjd parts of my life";
+// let updateLife = newPart.indexOf("parts");
+// console.log(updateLife)
+
+
+let text2 = "Hello please find the best location 'Noida', Delhi, Pune";
+let index2 = text2.search("Delhi")
+console.log(index2)
+
+
+
+let pattern = "agra noida alighar pune delhi, kolkata";
+let findLocationNumber = pattern.search("kolkata");
+console.log(findLocationNumber)
+
+let mainLocation = "noida, agra, delhi, pune,";
+let findMain = mainLocation.search("agra");
+console.log(findMain)
+
+
+let uText = " Please locate where 'locate' accurs!";
+let findList = uText.search(/locate/);
+console.log(findList)
+
+let text3 = "Hello Delhi Pune";
+
+console.log(text3.search("Delhi")); // 6
+console.log(text3.match("Delhi"));
+
+
+let matchMethod = "The rain in SPAIN Stay mainly in the plain";
+console.log(matchMethod.match("ain"))
+
+let matchIndex = "The rain in SPAIN stay mainly in the plain";
+console.log(matchIndex.match(/nly/g));
+
+let textall = "I love cats. Cats are very easy to love. Cats are very popular.";
+
+const findbet = textall.matchAll(/Cats/g);
+
+for (const match2 of findbet) {
+  console.log(match2);
+}
+
+let findAllct = "cats is so cute Cats are very popular cats easy to handle";
+const findCats = findAllct.matchAll(/cats/g)
+for (const storeCat of findCats){
+  console.log(storeCat)
+}
+
+
+let include = "Hello world, Welcome to the Universe";
+console.log(include.includes("world"))
+
+let ins = "Hello World, welcome to the Universe yahoo gmail";
+console.log(ins.includes("us"))
+
+
+let b = "Hello World welcome the jugle find the best location";
+console.log(b.startsWith("welcome", 12))
+        
+
+let c = "jhdjkask sakjhdkashd sa,hdkjashd sfyaiu kajsdahsdkjskdjakhh";
+console.log(c.length)
+
+// localeCompare
+
+let fruits = ["banana", "apple", "Mango"];
+fruits.sort((a, b) => a.localeCompare(b));
+console.log(fruits)
+
+
+let name = ["Farhan", "Zohan", "umar"];
+name.sort((d, e)=> d.localeCompare(e));
+console.log(name)
+
+
+
+let zoho = ["Admin", "User", "Password", "Input"];
+zoho.push("file")
+zoho.sort((m, n)=> m.localeCompare(n));
+console.log(zoho)
+
+let nums = [10, 20, 30];
+nums.push ("cehck my number is working or not working")
+nums.sort((y , z) => y - b);
+console.log(nums)
+
+let adminDetails = "admin, User, Password, input, file";
+let result = adminDetails.split(",")
+console.log(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 
