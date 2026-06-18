@@ -1,141 +1,254 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-    <title>datatype</title>
-</head>
-<body>
-    <h1 id="hh"></h1>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Passway Immigration and Visa Consulting">
+    <meta name="keywords" content="Passway Immigration and Visa Consulting">
+    <meta name="author" content="Passway Immigration and Visa Consulting">
+    <!-- Page Title -->
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
 
-    <script>
+    body{
+      background:#f4f7fb;
+    }
+    img{width: 100%; height: 100%;}
 
+    .todo-box{
+      width:400px;
+      background:#fff;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    }
 
-function sum(a,b){
-    return a + b;
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+      color:#333;
+    }
+
+    .input-box{
+      display:flex;
+      gap:10px;
+      margin-bottom:20px;
+    }
+
+    .input-box input{
+      flex:1;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      outline:none;
+    }
+
+    .input-box button{
+      padding:12px 18px;
+      border:none;
+      background:#2563eb;
+      color:#fff;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .input-box button:hover{
+      background:#1d4ed8;
+    }
+
+    ul{
+      list-style:none;
+    }
+
+    li{
+      background:#f1f5f9;
+      padding:12px;
+      margin-bottom:10px;
+      border-radius:8px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .delete-btn{
+      background:red;
+      color:#fff;
+      border:none;
+      padding:6px 10px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    .delete-btn:hover{
+      opacity:0.8;
+    }
+    .completed{
+   text-decoration: line-through;
+   opacity: 0.6;
 }
 
-// console.log(`1 + 2 = ${sum(1, 2)}.`)
-// console.log(sum(4,6))
+.Ellipse_3 {
+  border-radius: 50%;
+  background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 0%, rgb(254,188,39) 98%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 0%, rgb(254,188,39) 98%);
+  background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 0%, rgb(254,188,39) 98%);
+  width: 210px;
+  height: 210px;
+  z-index: 30;
+}
 
-console.log(`1 + 2 = ${sum(1,2)}`)
-
-// alert(`1 + 2 = ${sum(1, 2)}.`);
-
-// backticks
-
-let guestList = `Guests 
-*john 
-*pete
-*mary`;
-console.log(guestList)
-
-
-// special characters
-let updateName = "farhan\r abc\r bg"
-// alert(updateName)
-
-
-
-
-// accessing characters
-
-let str = `Hello`;
-// console.log(str [0]);
-// console.log(str.at[0])
-console.log(str[str.lenght - 1]);
-console.log(str.at[-1])
-
-
-let backticks = `backstick`
-console.log(backticks)
-
-
-
-
-let strP = 'Hello';
-console.log(strP[0]);
-console.log(strP.at(0));
-console.log(strP.length);
-console.log(strP[-2]);
-console.log(strP.at(-2));
-
-for (let char of 'Hello') console.log(char);
-for (const main of 'Farha') console.log(main);
-
-
-
-// string cant be change in javascript it is impossible
-let strNew = 'mmm';
-
-strNew[0] = 'hhhh';
-console.log(strNew[0]);
-
-let strUpdate = 'hello';
-strUpdate = 'M' + strUpdate[4];
-console.log(strUpdate);
-
-
-// indexOf
-let str2 = "Widget with id";
-
-console.log( str2.indexOf('set') ); 
-console.log(str2.indexOf("id"))
-
-console.log(str2.indexOf('id', 2))
-
-// what is trim in javascript 
-// trim use for remove extra space in string 
-let strTrim = "     this trim section"
-console.log(str.strTrim().indexOf("trim"))
-
-console.log(str.strTrim().indexOf("this"))
-
-console.log(str.strTrim().indexOf("trim"))
-console.log(str.strTrim().indexOf("h"))
-
-// let ste = "name whit farhan";
-// console.log(ste.indexOf('farhan'))
+  .Canada {
+  font-size: 60px;
+  font-family: "Poppins";
+  color: rgb(2, 25, 64);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  -moz-transform: matrix( 1.2561611225243,0,0,1.2561611225243,0,0);
+  -webkit-transform: matrix( 1.2561611225243,0,0,1.2561611225243,0,0);
+  -ms-transform: matrix( 1.2561611225243,0,0,1.2561611225243,0,0);
+}
+.banner_Details{
+width: 600px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: #4f8bbd80;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #dbeaf7;
+}
+.banner_Details p {    line-height: 23px;
+    font-size: 18px;
+    font-weight: bold;}
+.banner_Details h1 {    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 3px 5px #103d63;}
+.banner{position: relative;}
+.banner button{
+      padding: 12px 32px;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 800;
+    border: 2px solid #fff;
+    background-color: #d02a1d;
+    cursor: pointer;
+}
+  </style>
+</head>
+<body>
+<div class="banner">
+  <img src="https://www.mypassway.com/images/home_banner.webp" alt="">
+  <div class="banner_Details">
+    <h1>Passway Immigration</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deserunt officiis voluptatibus eveniet, aspernatur temporibus, repellendus accusamus omnis, porro sapiente incidunt. Possimus magnam vero illum ipsam nam harum, cum voluptate.</p>
+  <button onclick="alert('Thank You for Contact')">contact us</button>
+  </div>
+</div>
+<div id="textCount">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum.</p>
+</div>
 
 
+<button id="loop"></button>
+<div id="loopInner"></div>
 
-// changing the case
-let nameUpdate = "farhan";
-console.log(nameUpdate.toUpperCase())
-
-console.log(nameUpdate.toLowerCase())
-
-        // floating number
-let n = 123
-n = 12.344 
-console.log(n)
+<script>
+// let count = document.getElementById("textCount").innerText
+// console.log(count.length)
 
 
-let number = 133444
-number = 2.3333
-console.log(number.typeof)
+// let a = "Farhan";
+// let b = "Zohan";
+// console.log(`Welcome ${a} ${b}`)
+
+
+// let c = "Yahoo";
+// let d = "Right Section";
+// console.log(`Please find the best place ${c} ${d}`)
+
+
+// let e = "What’s going on";
+// let f = "what are you excited about?";
+// console.log(`I’m here ${e} ${f}`)
+
+// let userDetails = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// console.log(userDetails.length)
 
 
 
 
-// Infinity
-
-console.log(1/0)
-console.log(Infinity)
-
-
-// Nan
-console.log("not a number" / 2)
+// let text = "hello   World";
+// console.log(text.charCodeAt(0))
 
 
 
-// BigInt
-// bigint is javascript specail datatype that allow to javascript hold very large number
-console.log(900093939393939 + 1)
+// const name = "w3School";
+// let letter = name.at(2)
+
+// let updateName = "w3Schools";
+// let updateLatter = name [2]
+// console.log(updateLatter)
+
+// let concat1 = "Hello";
+// let concat2  = "World";
+// let concat3 = concat1.concat(" ", concat2 );
+// console.log(concat3)
+// // alert(concat3)
+
+
+
+// let textSlice = "Apple, Banana, Kiwi";
+// let part = textSlice.slice(13);
+// console.log(part)
+
+// let updateSlice = "Apple, Banana, Kiwi";
+// let updatePart = updateSlice.slice(-12);
+// console.log(updatePart)
+
+// JavaScript string lastIndexOf()
+// the lastIndexOf() method return the index of the last occurrence of a 
+// specified text in a String
+
+let text = "Please locate";
+let index = text.lastIndexOf("locate");
+console.log(index)
+
+
+let globalText = "please find the best location";
+let findTheLocation = globalText.lastIndexOf("best");
+console.log(findTheLocation);
 
 
 
 
+let newIndex = "Please locate where 'locate' occurs!";
+let update = newIndex.indexOf("locate", 15);
+console.log(update)
 
-    </script>
+let newPart = "Please find the best jhdasj sadhasjd parts of my life";
+let updateLife = newPart.indexOf("parts");
+console.log(updateLife)
+
+</script>
 
 </body>
 </html>
