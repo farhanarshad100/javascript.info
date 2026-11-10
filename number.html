@@ -5,21 +5,9 @@
 </head>
 <body>
     <h1 id="hh"></h1>
-
     <div id="output"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div id="toFixedMethod"></div>
+    <div id="demo"></div>
     <script>
       let x = 10;
       let y = 1.5;
@@ -35,7 +23,42 @@
 
 
       let number = 1e2;
-      console.log(number)
+      console.log(number);
+
+
+      let start = 1234;
+      let update = start.toString(2);
+      console.log(update)
+
+
+
+
+
+// The toFixed() Method
+
+// to Fixed() return a string with the number written a specified number of decimals:
+
+
+
+let method = 9.656;
+document.getElementById("toFixedMethod").innerHTML =
+  method.toFixed(0) + "<br>" +
+  method.toFixed(2) + "<br>" +
+  method.toFixed(4) + "<br>" +
+  method.toFixed(6);
+
+
+  let precision = 9.656;
+  document.getElementById("demo").innerHTML = 
+  precision.toPrecision() + "<br>" +
+  precision.toPrecision(2) + "<br>" +
+  precision.toPrecision(4) + "<br>" +
+  precision.toPrecision(6)
+
+
+
+
+
 
 
 
