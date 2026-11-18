@@ -44,7 +44,8 @@ body {
     z-index: -5;
     background:
         linear-gradient(110deg, rgba(5,10,27,.96), rgba(8,14,35,.80)),
-        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85");
+        url("../es6/images/pexels-dkomov-34804021.jpg");
+
     background-size: cover;
     background-position: center;
     animation: backgroundMove 25s ease-in-out infinite alternate;
@@ -251,7 +252,7 @@ main {
 
 .eyebrow {
     color: var(--cyan);
-    font: 10px 'DM Mono';
+    font: 17px 'DM Mono';
     letter-spacing: 2px;
 }
 
@@ -492,14 +493,14 @@ h1 {
 }
 
 .html-icon {
-    bottom: 19%;
+    bottom: 33%;
     right: 9%;
     animation-delay: -2s;
 }
 
 .css-icon {
     bottom: 3%;
-    left: 43%;
+    left: 27%;
     animation-delay: -3s;
 }
 
@@ -532,8 +533,8 @@ h1 {
 .code-card {
     position: absolute;
     width: 285px;
-    right: -2%;
-    bottom: 4%;
+    right: -107px;
+    bottom: -4%;
     background: rgba(9,17,37,.94);
     border: 1px solid #9cb8ff55;
     border-radius: 13px;
@@ -541,7 +542,7 @@ h1 {
     backdrop-filter: blur(20px);
     box-shadow: 0 20px 60px #000a, 0 0 35px #658dff20;
     z-index: 4;
-    transform: rotate(-3deg);
+    transform: rotate(0deg) !important;
     transition: transform .3s;
 }
 
@@ -569,9 +570,9 @@ h1 {
 .filename { margin-left: 7px; }
 
 .code {
-    min-height: 150px;
-    padding: 13px;
-    font: 8px/1.9 'DM Mono';
+height: 150px !important;
+    padding: 10px;
+    font: 8px / 1.9 'DM Mono';
     color: #c4d1e8;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
@@ -641,9 +642,10 @@ h1 {
 }
 
 .card p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.8;
     color: var(--muted);
+    font-weight: 700;
 }
 
 /* SKILLS */
@@ -873,11 +875,7 @@ footer {
 
 <header>
     <div class="logo">
-        <div class="logo-icon">R</div>
-        <div>
-            roshis
-            <small>UI DEVELOPER</small>
-        </div>
+     <img src="images/logo.png" alt="Farhan" />
     </div>
 
     <nav>
@@ -900,7 +898,7 @@ footer {
 <section class="page home active" id="home">
 
     <div class="copy">
-        <div class="eyebrow">HELLO, I'M ROSHIS</div>
+        <div class="eyebrow">HELLO, I'M Farhan</div>
 
         <h1>
             I build digital<br>
@@ -1000,7 +998,7 @@ footer {
                 <i class="dot"></i>
                 <i class="dot"></i>
                 <i class="dot"></i>
-                <span class="filename">roshis / developer.jsx</span>
+                <span class="filename">Farhan / developer.jsx</span>
             </div>
 
             <div class="code">
@@ -1148,7 +1146,7 @@ footer {
         <div class="contact-box">
             <div class="contact-row">
                 EMAIL
-                <strong id="emailText">your.email@example.com</strong>
+                <strong id="emailText">farhanarshad100@gmail.com</strong>
             </div>
 
             <div class="contact-row">
@@ -1173,8 +1171,7 @@ footer {
 </main>
 
 <footer>
-    <span>© 2026 ROSHIS · UI DEVELOPER</span>
-    <span>DESIGNED WITH PRECISION</span>
+    <span>© 2026 FARHAN · UI DEVELOPER</span>
 </footer>
 
 </div>
